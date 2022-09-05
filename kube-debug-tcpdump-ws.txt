@@ -1,0 +1,1 @@
+kubectl debug -i -q POD --image=npastorale/tcpdump --target=CONTAINER -- tcpdump -i INTERFACE --immediate-mode -w - | wireshark -k -i -
